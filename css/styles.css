@@ -52,8 +52,8 @@ body {
 h1 {
     font-family: 'Cabin', sans-serif;
     font-weight: bold;
-    font-size: 4rem;
     margin: 0;
+    font-size: 3rem;
 }
 
 h2 {
@@ -61,7 +61,8 @@ h2 {
 }
 
 .content-wrap {
-    width: 80%;
+    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
     padding: 60px 0;
 }
@@ -74,7 +75,6 @@ h2 {
     padding-top: 80px;
     color: #FBFCFF;
     background-color: #08415C;
-    text-align: center;
 }
 
 
@@ -124,17 +124,24 @@ h2 {
     padding: 30px;
 }
 
-.project-item img {
-    float: left;
-    margin-right: 30px;
-}
-
 
 /* Experience
 -------------------------------------------- */
 
 .work-experience {
     background-color: #D0CCD0;
+}
+
+.work-experience-flex-container {
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LI-profile-badge {
+    background-color: white;
 }
 
 .resume-btn {
@@ -145,7 +152,6 @@ h2 {
     border-radius: 4px;
     text-decoration: none;
     text-align: center;
-    margin-top: 20px;
 }
 
 .resume-btn a {
@@ -168,9 +174,26 @@ h2 {
 /* Contact Info
 -------------------------------------------- */
 
-footer li {
-    display: inline;
-    margin: 0 20px;
+footer {
+    background: rgb(58, 58, 58);
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.contact-list a {
+    display: inline-block;
+    padding: 15px;
 }
 
 
@@ -179,6 +202,8 @@ footer li {
 
 .navbar {
     position: fixed;
+    display: flex;
+    justify-content: space-between;
     top: 0;
     left: 0;
     padding: 10px;
@@ -190,11 +215,10 @@ footer li {
 .navbar a {
     color: #FBFCFF;
     text-decoration: none;
-    padding: 0 10px;
 }
 
 .navbar a:hover {
-    color: #EBBAB9;
+    color: #FFFFFF;
 }
 
 .nav-logo {
@@ -203,21 +227,66 @@ footer li {
 }
 
 .nav-list {
-    float: right;
+    display: none;
 }
 
-.nav-item,
-.footer-item {
-    display: flex;
-    float: left;
-}
-
-.navbar li {
-    float: left;
-    color: black;
-    height: 100%;
+.nav-item {
+    padding: 0 10px;
 }
 
 img {
     width: 300px;
+}
+
+
+/* Responsive
+-------------------------------------------- */
+
+
+/* Specific for layouts larger than 480px */
+
+@media screen and (min-width: 480px) {
+    h1 {
+        font-size: 4rem;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 30px;
+    }
+    .work-experience-flex-container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .education-flex-box {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        justify-content: center;
+    }
+    .nav-list {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+    }
+    .navbar {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        background-color: #08415C;
+        max-height: 70px;
+        width: 100%;
+    }
+    .profile,
+    footer {
+        text-align: center;
+    }
 }

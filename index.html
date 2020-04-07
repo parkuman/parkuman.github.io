@@ -14,7 +14,7 @@
 
 <body>
     <main>
-        <div class="navbar">
+        <header class="navbar">
             <img class="nav-logo" href="/" src="/images/face.png" width="512" height="512">
             <ul class="nav-list">
                 <li class="nav-item">
@@ -30,10 +30,10 @@
                     <a href="#education" onclick="">Education</a>
                 </li>
             </ul>
-        </div>
+        </header>
 
         <!-- ***********************  ABOUT / PROFILE  *********************** -->
-        <header id="profile" class="profile">
+        <section id="profile" class="profile">
             <div class="content-wrap">
                 <h1>Parker Rowe</h1>
                 <h2 style="font-size: 60px;">🤠</h2>
@@ -42,7 +42,7 @@
                 <p>Focusing my studies on Entrepreneurship & Innovation in software, I love to bring ideas to life!</p>
             </div>
 
-        </header>
+        </section>
 
         <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
         <section id="projects" class="projects">
@@ -89,8 +89,11 @@
             <div class="content-wrap">
                 <h2>Work Experience</h2>
                 <p>View my LinkedIn profile or Resume!</p>
-                <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="parker-a-rowe"><a class="LI-simple-link" href='https://ca.linkedin.com/in/parker-a-rowe?trk=profile-badge'>Parker Rowe</a></div>
-                <div class="resume-btn"><a href="Parker Rowe CV.pdf">Resume</a></div>
+                <div class="work-experience-flex-container">
+                    <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="parker-a-rowe"><a class="LI-simple-link" href='https://ca.linkedin.com/in/parker-a-rowe?trk=profile-badge'>Parker Rowe</a></div>
+                    <div class="resume-btn"><a href="Parker Rowe CV.pdf">Resume</a></div>
+                </div>
+
                 <!-- <section>
                     <h3>Front-end Developer & Educator</h3>
                     <p>Christina Truong Consulting Inc.</p>
@@ -144,15 +147,15 @@
 
                 <section>
                     <h3>Queens University - Kingston, ON</h3>
-                    <p>BASc: Computer Engineering - Entrepreneurship & Innovation</p>
-                    <p>2018-2022</p>
+                    <div class="education-flex-box">
+                        <p>BASc: Computer Engineering - Entrepreneurship & Innovation</a>
+                            <p>2018-2022</p>
+                    </div>
 
                     <p>4-Year full time engineering program partnered with the Smith School of Business, offering a unique insight into how to launch a venture.</p>
                     <a href="https://www.ece.queensu.ca/undergraduate/ECEi.html">ECEi @ Queen's</a>
                 </section>
-
             </div>
-
         </section>
 
         <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
@@ -161,7 +164,7 @@
                 <h2>Let's Keep in Touch!</h2>
 
                 <!-- Social media and contact links. Add or remove any networks. -->
-                <ul>
+                <ul class="contact-list">
                     <li><a href="mailto:parker.a.rowe@gmail.com">parker.a.rowe@gmail.com</a></li>
                     <li><a href="http://prowe.ca" target="_blank">prowe.ca</a></li>
                     <li><a href="https://www.linkedin.com/in/parker-a-rowe/" target="_blank">LinkedIn</a></li>

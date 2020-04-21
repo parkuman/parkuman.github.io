@@ -15,19 +15,25 @@ function pickCard() {
 function nextCard() {
     // to make sure they arent looking at the next answer
     showQuestion();
-    if (currentCard < flash_questions.length - 1) {
-        currentCard++;
-        pickCard();
-    }
+    setTimeout(function() {
+        if (currentCard < flash_questions.length - 1) {
+            currentCard++;
+            pickCard();
+        }
+    }, 180);
+
 }
 
 function prevCard() {
     // to make sure they arent looking at the next answer
     showQuestion();
-    if (currentCard > 0) {
-        currentCard--;
-        pickCard();
-    }
+    setTimeout(function() {
+        if (currentCard > 0) {
+            currentCard--;
+            pickCard();
+        }
+    }, 180);
+
 }
 
 /**

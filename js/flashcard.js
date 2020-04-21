@@ -1,9 +1,14 @@
 function flipCard() {
     card.classList.toggle('is-flipped');
+
+    card.classList.contains('is-flipped') ? document.querySelector(".front-back-indicator").innerHTML = "Back" : document.querySelector(".front-back-indicator").innerHTML = "Front";
+
 }
 
 function showQuestion() {
     card.classList.toggle('is-flipped', false);
+
+    document.querySelector(".front-back-indicator").innerHTML = "Front";
 }
 
 function pickCard() {

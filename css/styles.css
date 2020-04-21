@@ -124,6 +124,10 @@ h2 {
     padding: 30px;
 }
 
+.project-item img {
+    width: 300px;
+}
+
 
 /* Experience
 -------------------------------------------- */
@@ -232,10 +236,6 @@ footer a {
 
 .nav-item {
     padding: 0 10px;
-}
-
-img {
-    width: 300px;
 }
 
 

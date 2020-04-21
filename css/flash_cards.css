@@ -18,6 +18,7 @@ https://coolors.co/08415c-cc2936-ebbab9-d0ccd0-fbfcff
 
 html {
     box-sizing: border-box;
+    width: 100%;
 }
 
 
@@ -58,6 +59,7 @@ h1 {
 
 h2 {
     margin: 0;
+    font-size: 1rem;
 }
 
 .content-wrap {
@@ -108,10 +110,11 @@ h2 {
 .prev-arrow,
 .next-arrow {
     cursor: pointer;
+    margin: 0 20px;
 }
 
 .flip-scene {
-    width: 60%;
+    width: 95%;
     height: 24rem;
     perspective: 600px;
 }
@@ -152,4 +155,21 @@ h2 {
 
 .flashcard-face-back {
     transform: rotateX(180deg);
+}
+
+
+/* Responsive
+-------------------------------------------- */
+
+
+/* Specific for layouts larger than 480px */
+
+@media screen and (min-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .flip-scene {
+        width: 70%;
+        height: 24rem;
+    }
 }
